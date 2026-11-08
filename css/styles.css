@@ -44,6 +44,13 @@ ul {
     left: 0; 
     z-index: 100;
     background-color: transparent;
+    
+}
+
+.hero-background {
+    width: 100%;
+    background: url(../Images/hero-frame.svg) center center / auto repeat, 
+    linear-gradient(45deg, var(--tartiary-color), var(--secondary-color), var(--primary-color));
 }
 
 .navbar-container {
@@ -156,16 +163,6 @@ ul {
 
 /* Hero Section */
 
-.hero {
-    width: 100%;
-    background: url(../Images/hero-frame.svg) center center / auto repeat, 
-    linear-gradient(45deg, var(--tartiary-color), var(--secondary-color), var(--primary-color));
-
-    /* margin-top: -108px;
-    padding-top: 108px; */
-
-}
-
 .hero-container {
     max-width: 1373px;
     display: flex;
@@ -173,7 +170,7 @@ ul {
     justify-content: space-between;
     gap: 30px;
     margin: 0 auto;
-    padding: 130px 0px 160px;
+    padding: 130px 0px 130px;
 }
 
 .hero-texts {
