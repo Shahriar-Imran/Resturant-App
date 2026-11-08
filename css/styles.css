@@ -103,6 +103,14 @@ ul {
     font-weight: 500;
 }
 
+.navbar-menu-link,
+.navbar-mobile-menu-link {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: #fff;
+}
+
 .navbar-menu-link:hover,
 .navbar-mobile-menu-link:hover {
     color: var(--link-color);
@@ -285,11 +293,16 @@ ul {
     .hero-heading h1 {
         font-size: 60px;
     }
+
+    .hero-images {
+        max-width: 100%;
+        padding: 0 25px;
+    }
 }
 
 @media (max-width: 768px) {
     .hero-heading h1{
-        font-size: 48px;
+        font-size: 40px;
     }
 
     .hero-content {
