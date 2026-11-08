@@ -101,7 +101,7 @@ ul {
     color: var(--link-color);
 }
 
-.navbar .booking-link {
+.link-btn {
     color: var(--link-font-color);
     font-size: 16px;
     font-weight: 700;
@@ -151,14 +151,92 @@ ul {
 /* Hero Section */
 
 .hero {
-    background: url('./images/hero-frame.svg') center center repeat;
-    /* background-color: black; */
     width: 100%;
-    background-color: linear-gradient(45deg, --tartiary-color, --secondary-color, --primary-color);
+    background: url(../Images/hero-frame.svg) center center / cover repeat, 
+    linear-gradient(45deg, var(--tartiary-color), var(--secondary-color), var(--primary-color));
+
+    margin-top: -108px;
+    padding-top: 108px;
+
 }
 
+.hero-container {
+    max-width: 1100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    margin: 0 auto;
+}
 
+.hero-texts {
+    /* position: absolute; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
 
+.hero-heading {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-heading h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    color: #fff;
+    font-size: 80px;
+    padding: 10px 24px;
+    background: linear-gradient(to right, rgba(189, 31, 23, 0), rgba(189, 31, 23, 1));
+}
+
+.hero-content {
+    max-width: 400px;
+}
+
+.hero-content p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #fff;
+    /* margin-bottom: 2rem; */
+}
+
+.hero-link {
+    margin-top: 10px;
+}
+
+.hero-images {
+    width: 50%;
+    position: relative;
+}
+
+.hero-images .main-img {
+    width: 100%;
+    max-width: 500px;
+    display: block;
+}
+
+.hero-images .flower-icon {
+    height: 45px;
+    width: 45px;
+    position: absolute;
+    top: -25px;
+    right: -10px;
+    z-index: 3;
+}
+
+.hero-images .offer-icon {
+    height: 120px;
+    width: 120px;
+    position: absolute;
+    bottom: 0;
+    right: -20px;
+    border-radius: 50%;
+    background-color: var(--link-color);
+    z-index: 3;
+}
 
 
 /* Media Queries */
