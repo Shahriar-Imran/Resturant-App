@@ -261,9 +261,14 @@ ul {
 
 
 /* About Section */
+.about {
+    width: 100%;
+    position: relative;
+}
+
 .about-container {
-    width: 1373px;
-    margin: 10rem 2rem;
+    max-width: 1373px;
+    margin: 10rem auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -272,10 +277,11 @@ ul {
 }
 
 .about-main-contents {
+    margin: 0 auto;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
+    justify-content: space-between;
+    align-items: start;
+    gap: 3rem;
 }
 
 .about-left {
@@ -283,11 +289,133 @@ ul {
     width: 100%;
 }
 
-.about-market
+.about .market-experience {
+    position: absolute;
+    height: 100px;
+    max-width: 200px;
+    top: 30.25px;
+    left: 24px;
+    background: #fff;
+    border-radius: 24px;
+}
+
+.about-right {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: rem;
+}
+
+.about-navbar {
+    border-bottom: 1px solid rgba(181, 43, 29, 1);
+    width: 100%;
+}
+
+.about-menu-list {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.about-menu-item {
+    padding: 6px 16px;
+    font-size: 14px;
+
+    a {
+        color: rgba(51, 51, 51, 1);
+    }
+    a:hover {
+        color: rgba(181, 43, 29, 1);
+    }
+}
+
+.about-menu-item-about {
+    background: rgba(181, 43, 29, 1);
+    a {
+        color: #fff;
+    }
+}
+
+.about-texts h1{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 60px;
+    line-height: 60px;
+    margin: 2rem 0 1rem;
+}
+
+.about-texts p {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+
+.about-right-lower {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.about-contact-number {
+    font-size: 18px;
+    font-weight: 700;
+    i {
+        width: 24px;
+        height: 24px;
+        color: rgb(181, 43, 29);
+        margin-right: 5px;
+    }
+}
+
+.about-features {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.feature-card {
+    width: 440px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    img {
+        width: 90px;
+        height: 90px;
+    }
+    h4 {
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 30px;
+        line-height: 36px;
+    }
+    p {
+        font-size: 20px;
+    }
+}
+
+.about .about-side-img {
+    position: absolute;
+    top: 45%;
+    right: 0;
+    width: 280px;
+    height: 280px;
+}
+
 
 
 
 /* Media Queries */
+@media (max-width: 1400px) {
+    .side-img {
+        display: none;
+    }
+}
+
+
 @media (max-width: 992px) {
     .navbar-container {
         margin: 0 2rem;
@@ -324,6 +452,19 @@ ul {
     .hero-images {
         max-width: 100%;
         padding: 0 25px;
+    }
+
+    .about-main-contents {
+        flex-direction: column;
+        margin: 0 2rem;
+    }
+    .about-right {
+        max-width: 100%;
+    }
+    .about-features {
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
     }
 }
 
