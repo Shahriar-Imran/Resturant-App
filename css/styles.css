@@ -150,7 +150,12 @@ ul {
 
 /* Hero Section */
 
-
+.hero {
+    background: url('./images/hero-frame.svg') center center repeat;
+    /* background-color: black; */
+    width: 100%;
+    background-color: linear-gradient(45deg, --tartiary-color, --secondary-color, --primary-color);
+}
 
 
 
