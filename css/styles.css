@@ -260,6 +260,33 @@ ul {
 }
 
 
+/* About Section */
+.about-container {
+    width: 1373px;
+    margin: 10rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.about-main-contents {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.about-left {
+    position: relative;
+    width: 100%;
+}
+
+.about-market
+
+
+
 /* Media Queries */
 @media (max-width: 992px) {
     .navbar-container {
