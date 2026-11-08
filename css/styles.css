@@ -37,7 +37,7 @@ ul {
 }
 
 .navbar {
-    padding: 0 2rem;
+    padding: 0;
     position: sticky; 
     top: 0;
     right: 0;
@@ -107,6 +107,12 @@ ul {
     font-weight: 700;
     padding: 10px 24px;
     background-color: var(--link-color);
+    text-transform: uppercase;
+}
+
+.link-btn:hover {
+    background-color: var(--link-font-color);
+    color: var(--link-color)
 }
 
 .navbar-mobile-menu {
@@ -152,34 +158,38 @@ ul {
 
 .hero {
     width: 100%;
-    background: url(../Images/hero-frame.svg) center center / cover repeat, 
+    background: url(../Images/hero-frame.svg) center center / auto repeat, 
     linear-gradient(45deg, var(--tartiary-color), var(--secondary-color), var(--primary-color));
 
-    margin-top: -108px;
-    padding-top: 108px;
+    /* margin-top: -108px;
+    padding-top: 108px; */
 
 }
 
 .hero-container {
-    max-width: 1100px;
+    max-width: 1373px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 30px;
     margin: 0 auto;
+    padding: 130px 0px 160px;
 }
 
 .hero-texts {
-    /* position: absolute; */
+    /* width: 60%; */
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 1rem;
+    position: relative;
+    z-index: 2;
+    
 }
 
 .hero-heading {
-    width: 100%;
-    position: relative;
+    width: 830px;
+    position: absolute;
+    top: -70px;
+    left: 0;
     z-index: 2;
 }
 
@@ -188,34 +198,39 @@ ul {
     color: #fff;
     font-size: 80px;
     padding: 10px 24px;
-    background: linear-gradient(to right, rgba(189, 31, 23, 0), rgba(189, 31, 23, 1));
+    background: linear-gradient(to right, rgba(189, 31, 23, 0), rgba(189, 31, 23, 0.8));
 }
 
 .hero-content {
-    max-width: 400px;
+    max-width: 550px;
+    margin-top: 200px;
 }
 
 .hero-content p {
-    font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 24px;
     color: #fff;
+    padding: 10px 24px;
     /* margin-bottom: 2rem; */
 }
 
 .hero-link {
-    margin-top: 10px;
+    margin: 24px;
 }
 
 .hero-images {
-    width: 50%;
+    width: 750px;
+    height: 650px;
     position: relative;
+    z-index: 1;
 }
 
 .hero-images .main-img {
     width: 100%;
-    max-width: 500px;
-    display: block;
+    height: 100%;
+    padding-left: 50px;
+    transform: rotateY(180deg);
+    /* display: block; */
 }
 
 .hero-images .flower-icon {
@@ -223,7 +238,7 @@ ul {
     width: 45px;
     position: absolute;
     top: -25px;
-    right: -10px;
+    right: 25px;
     z-index: 3;
 }
 
@@ -232,7 +247,8 @@ ul {
     width: 120px;
     position: absolute;
     bottom: 0;
-    right: -20px;
+    right: 25px;
+    padding: 8px;
     border-radius: 50%;
     background-color: var(--link-color);
     z-index: 3;
@@ -254,5 +270,41 @@ ul {
     }
     .navbar-mobile-menu {
         display: block;
+    }
+
+    .hero-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-texts {
+        width: 100%;
+    }
+
+    .hero-content {
+        margin-top: 50px;
+    }
+
+    .hero-heading h1 {
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-heading h1{
+        font-size: 48px;
+    }
+
+    .hero-content {
+        margin-top: 25px;
+    }
+
+    .hero-content p {
+        font-size: 20px;
+    }
+
+    .link-btn {
+        padding: 13.6px 20.4px;
+        font-size: 15px;
     }
 }
