@@ -319,12 +319,12 @@
                         </p>
                     </div>
                 </div>
-                <div class="popular-foods-navigation">
-                    <button class="popular-foods-prev">
+                <div class="popular-foods-navigation prev-next-btn">
+                    <button class="popular-foods-prev prev-btn">
                         <i class="fa-solid fa-chevron-left"></i>
                     </button>
 
-                    <button class="popular-foods-next">
+                    <button class="popular-foods-next next-btn">
                         <i class="fa-solid fa-chevron-right"></i>
                     </button>
                 </div>
@@ -339,35 +339,160 @@
         <section class="booking-section" id="booking-section">
             <div class="booking-container container">
                 <div class="booking-form-container">
-                    <p class="booking-subtitle"><i class="fas fa-square"></i>Book Now</p>
+                    <p class="booking-subtitle">
+                        <i class="fas fa-square"></i>Book Now
+                    </p>
                     <h1 class="booking-heading">Book your table</h1>
                     <p class="booking-description">
-                        Enim tempor eget pharetra facilisis sed maecenas adipiscing. Eu leo molestie vel, ornare non id blandit netus.
+                        Enim tempor eget pharetra facilisis sed maecenas
+                        adipiscing. Eu leo molestie vel, ornare non id blandit
+                        netus.
                     </p>
                     <div class="booking-form">
                         <form action="#">
                             <div class="input-name">
-                                <input type="text" name="name" id="name" placeholder="Your Name*" required>
+                                <input
+                                    type="text"
+                                    name="name"
+                                    id="name"
+                                    placeholder="Your Name*"
+                                    required
+                                />
                             </div>
                             <div class="input-email">
-                                <input type="email" name="email" id="email" placeholder="Your Email">
+                                <input
+                                    type="email"
+                                    name="email"
+                                    id="email"
+                                    placeholder="Your Email"
+                                />
                             </div>
                             <div class="reservation-date">
-                                <input type="text" name="date" id="date" onfocus="(this.type='date')" onblur="if(!this.value) this.type='text'" placeholder="Reservation Date">
+                                <input
+                                    type="text"
+                                    name="date"
+                                    id="date"
+                                    onfocus="this.type = 'date'"
+                                    onblur="
+                                        if (!this.value) this.type = 'text';
+                                    "
+                                    placeholder="Reservation Date"
+                                />
                                 <i class="fas fa-calendar-alt"></i>
                             </div>
                             <div class="people-number">
-                                <input type="number" name="people" id="people" placeholder="Total People">
+                                <input
+                                    type="number"
+                                    name="people"
+                                    id="people"
+                                    placeholder="Total People"
+                                />
                             </div>
                             <div class="input-message">
-                                <textarea name="message" id="message" placeholder="Message"></textarea>
+                                <textarea
+                                    name="message"
+                                    id="message"
+                                    placeholder="Message"
+                                ></textarea>
                             </div>
-                            <button type="submit" class="link-btn">book now</button>
+                            <button type="submit" class="link-btn">
+                                book now
+                            </button>
                         </form>
                     </div>
                 </div>
             </div>
         </section>
+
+        <section class="user-review" id="user-review">
+            <div class="user-review-container container">
+                <div class="user-review-header">
+                    <p class="user-review-subtitle">
+                        <i class="fas fa-square"></i>Crispy, Every Bite Taste
+                    </p>
+                    <h1 class="user-review-heading">
+                        what some of my customers say
+                    </h1>
+                </div>
+                
+                <div class="user-review-contents">
+                    <div class="user-review-left">
+                        <div class="review-text">
+                            <p class="review-message">
+                                You can't go wrong with Chicken Mandi, I had it
+                                twice. The chicken was cooked perfectly, juicy &
+                                soft (usually mandi chicken is a bit dry). I
+                                would defiantly recommend it.
+                            </p>
+                            <span>&ldquo;</span>
+                        </div>
+                        <div class="reviewer-info">
+                            <div class="reviewer-name-address">
+                                <h3 class="reviewer-name">khalid al dawsry</h3>
+                                <p class="reviewer-address">Jeddah, Saudi</p>
+                            </div>
+                            <div class="border-line"></div>
+                            <img
+                                src="./Images/reviewer.png"
+                                alt="Khalid Al Dawsry"
+                                class="reviewer-img"
+                            />
+                        </div>
+                        <img
+                            src="./Images/user-review-left-icon.svg"
+                            alt=""
+                            class="user-review-left-icon"
+                        />
+                    </div>
+                    <div class="user-review-right">
+                        <div class="video-player-circle">
+                            <div class="video-player-triangle"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="user-review-navigation prev-next-btn">
+                    <button class="user-review-prev prev-btn">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+
+                    <button class="user-review next-btn">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer" id="footer">
+            <div class="footer-container container">
+                <h1 class="footer-heading">We ready to have you the best dinning experiences</h1>
+                <div class="footer-cards">
+                    <div class="footer-card">
+                        <i class="fas fa-clock"></i>
+                        <h2 class="card-title">opening hours</h2>
+                        <p class="card-detail-1">Monda - Sunday</p>
+                        <p class="card-detail-2">9:00 AM to 11:30 PM</p>
+                    </div>
+                    <div class="footer-card">
+                        <i class="fas fa-phone-volume"></i>
+                        <h2 class="card-title">opening hours</h2>
+                        <p class="card-detail-1">Monda - Sunday</p>
+                        <p class="card-detail-2">9:00 AM to 11:30 PM</p>
+                    </div>
+                    <div class="footer-card">
+                        <i class="fas fa-clock"></i>
+                        <h2 class="card-title">opening hours</h2>
+                        <p class="card-detail-1">Monda - Sunday</p>
+                        <p class="card-detail-2">9:00 AM to 11:30 PM</p>
+                    </div>
+                    <div class="footer-card">
+                        <i class="fas fa-clock"></i>
+                        <h2 class="card-title">opening hours</h2>
+                        <p class="card-detail-1">Monda - Sunday</p>
+                        <p class="card-detail-2">9:00 AM to 11:30 PM</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
         <script src="./js/script.js"></script>
     </body>
