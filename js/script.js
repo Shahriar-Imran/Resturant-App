@@ -1,12 +1,22 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const mobileMenu = document.querySelector('.navbar-mobile-menu-items');
-    const toggleMenu = document.querySelector('.navbar-mobile-menu-toggle');
+document.addEventListener("DOMContentLoaded", function () {
+    const mobileMenu = document.querySelector(".navbar-mobile-menu-items");
+    const toggleMenu = document.querySelector(".navbar-mobile-menu-toggle");
 
-    toggleMenu.addEventListener('click', function() {
-        mobileMenu.classList.toggle('active');
-    })
-})
+    toggleMenu.addEventListener("click", function () {
+        mobileMenu.classList.toggle("active");
+    });
+});
 
+// Navbar scrolling
+window.addEventListener("scroll", function () {
+    const navbar = document.querySelector(".navbar-area");
+
+    if (window.scrollY > 108) {
+        navbar.classList.add("navbar-scroll");
+    } else {
+        navbar.classList.remove("navbar-scroll");
+    }
+});
 
 const foodCards = document.querySelectorAll(".popular-item-card");
 
