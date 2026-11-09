@@ -338,30 +338,33 @@
 
         <section class="booking-section" id="booking-section">
             <div class="booking-container container">
-                <p class="booking-subtitle"><i class="fas fa-square"></i>Book Now</p>
-                <h1 class="booking-heading">Book your table</h1>
-                <p class="booking-description">
-                    Enim tempor eget pharetra facilisis sed maecenas adipiscing. Eu leo molestie vel, ornare non id blandit netus.
-                </p>
-                <div class="booking-form">
-                    <form action="#">
-                        <div class="input-name">
-                        <input type="text" name="name" id="name" placeholder="Your Name*" required>
-                        </div>
-                        <div class="input-email">
-                        <input type="email" name="email" id="email" placeholder="Your Email">
-                        </div>
-                        <div class="reservation-date">
-                        <input type="date" name="date" id="date" placeholder="Reservation Date">
-                        </div>
-                        <div class="people-number">
-                        <input type="number" name="people" id="people" placeholder="Total People">
-                        </div>
-                        <div class="input-message">
-                            <textarea name="message" id="message" placeholder="Message"></textarea>
-                        </div>
-                    </form>
-                    <a href="#" class="booking-link link-btn">book now</a>
+                <div class="booking-form-container">
+                    <p class="booking-subtitle"><i class="fas fa-square"></i>Book Now</p>
+                    <h1 class="booking-heading">Book your table</h1>
+                    <p class="booking-description">
+                        Enim tempor eget pharetra facilisis sed maecenas adipiscing. Eu leo molestie vel, ornare non id blandit netus.
+                    </p>
+                    <div class="booking-form">
+                        <form action="#">
+                            <div class="input-name">
+                                <input type="text" name="name" id="name" placeholder="Your Name*" required>
+                            </div>
+                            <div class="input-email">
+                                <input type="email" name="email" id="email" placeholder="Your Email">
+                            </div>
+                            <div class="reservation-date">
+                                <input type="text" name="date" id="date" onfocus="(this.type='date')" onblur="if(!this.value) this.type='text'" placeholder="Reservation Date">
+                                <i class="fas fa-calendar-alt"></i>
+                            </div>
+                            <div class="people-number">
+                                <input type="number" name="people" id="people" placeholder="Total People">
+                            </div>
+                            <div class="input-message">
+                                <textarea name="message" id="message" placeholder="Message"></textarea>
+                            </div>
+                            <button type="submit" class="link-btn">book now</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
