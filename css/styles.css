@@ -372,11 +372,9 @@ ul {
 .about-contact-number {
     font-size: 18px;
     font-weight: 700;
-    i {
-        width: 24px;
-        height: 24px;
-        color: rgb(181, 43, 29);
-        margin-right: 5px;
+    img {
+        width: 18px;
+        margin-right: 10px;
     }
 }
 
@@ -642,6 +640,11 @@ ul {
 }
 
 /* User review Section */
+.user-review {
+    margin: 0 auto;
+    position: relative;
+}
+
 .user-review-container {
     margin-top: 10rem;
     display: flex;
@@ -784,6 +787,22 @@ ul {
     clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
     position: absolute;
     margin: 15px 13px 15px 17px;
+}
+
+.user-review-left-side-img {
+    position: absolute;
+    height: 307px;
+    width: 303px;
+    top: 100px;
+    left: -80px;
+}
+
+.user-review-right-side-img {
+    position: absolute;
+    height: 500px;
+    width: 700px;
+    top: 400px;
+    right: -160px;
 }
 
 .footer {
