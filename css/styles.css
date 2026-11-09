@@ -10,6 +10,7 @@
     --tartiary-color: rgba(189, 31, 23, 1);
     --link-color: rgba(254, 191, 0, 1);
     --link-font-color: rgba(10, 20, 37, 1);
+    
 }
 
 html, 
@@ -409,14 +410,94 @@ ul {
 
 /* Popular Item Section */
 .popular-item {
-    background: rgba(251, 247, 242, 1)
+    background: rgba(251, 247, 242, 1);
+    padding-top: 1rem; 
+    padding-bottom: 1rem;
+    position: relative;
+}
+
+.popular-item-container {
+    max-width: 1320px;
+    margin: 10rem auto;
+    padding: 1rem;
+}
+
+.popular-item-subheading {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--tartiary-color);
+    margin-bottom: 2rem;
+}
+
+.popular-item-subheading i {
+        margin-right: 10px;
+}
+
+.popular-item-heading {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 4rem;
+}
+
+
+.popular-item-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem auto;
+}
+
+.popular-item-card {
+    width: 306px;
+    padding: 1rem; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #fff;
+}
+
+.popular-item-image {
+    height: 120px;
+    width: 120px;
+}
+
+.popular-item-card .h-line {
+    width: 57px;
+    border: 3px solid var(--tartiary-color);
+    border-radius: 10%;
+}
+
+.popular-item-name {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 24px;
+    text-align: center;
+    line-height: 36px;
+}
+
+.popular-item-description {
+    font-size: 16px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.popular-item-side-img {
+    height: 280px;
+    width: 255px;
+    position: absolute;
+    top: 55%;
+    left: 0;
+    transform: translateY(-50%);
 }
 
 
 
 
 /* Media Queries */
-@media (max-width: 1400px) {
+@media (max-width: 1800px) {
     .side-img {
         display: none;
     }
