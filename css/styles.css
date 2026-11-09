@@ -10,12 +10,11 @@
     --tartiary-color: rgba(189, 31, 23, 1);
     --link-color: rgba(254, 191, 0, 1);
     --link-font-color: rgba(10, 20, 37, 1);
-    
 }
 
-html, 
+html,
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     line-height: 1.6;
     scroll-behavior: smooth;
 }
@@ -39,19 +38,24 @@ ul {
 
 .navbar {
     padding: 0;
-    position: sticky; 
+    position: sticky;
     top: 0;
     right: 0;
-    left: 0; 
+    left: 0;
     z-index: 100;
     background-color: transparent;
-    
 }
 
 .hero-background {
     width: 100%;
-    background: url(../Images/hero-frame.svg) center center / auto repeat, 
-    linear-gradient(45deg, var(--tartiary-color), var(--secondary-color), var(--primary-color));
+    background:
+        url(../Images/hero-frame.svg) center center / auto repeat,
+        linear-gradient(
+            45deg,
+            var(--tartiary-color),
+            var(--secondary-color),
+            var(--primary-color)
+        );
 }
 
 .navbar-container {
@@ -86,7 +90,7 @@ ul {
 }
 
 .navbar-left h3 {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 28.44px;
     font-weight: 400;
 }
@@ -100,13 +104,13 @@ ul {
     justify-content: center;
     align-items: center;
     gap: 40px;
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
     font-weight: 500;
 }
 
 .navbar-menu-link,
 .navbar-mobile-menu-link {
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
     font-weight: 500;
     font-size: 15px;
     color: #fff;
@@ -128,7 +132,7 @@ ul {
 
 .link-btn:hover {
     background-color: var(--link-font-color);
-    color: var(--link-color)
+    color: var(--link-color);
 }
 
 .navbar-mobile-menu {
@@ -188,7 +192,6 @@ ul {
     flex-direction: column;
     position: relative;
     z-index: 2;
-    
 }
 
 .hero-heading {
@@ -200,11 +203,15 @@ ul {
 }
 
 .hero-heading h1 {
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: "Bebas Neue", sans-serif;
     color: #fff;
     font-size: 80px;
     padding: 10px 24px;
-    background: linear-gradient(to right, rgba(189, 31, 23, 0), rgba(189, 31, 23, 0.8));
+    background: linear-gradient(
+        to right,
+        rgba(189, 31, 23, 0),
+        rgba(189, 31, 23, 0.8)
+    );
 }
 
 .hero-content {
@@ -259,7 +266,6 @@ ul {
     background-color: var(--link-color);
     z-index: 3;
 }
-
 
 /* About Section */
 .about {
@@ -342,8 +348,8 @@ ul {
     }
 }
 
-.about-texts h1{
-    font-family: 'Bebas Neue', sans-serif;
+.about-texts h1 {
+    font-family: "Bebas Neue", sans-serif;
     font-size: 60px;
     line-height: 60px;
     margin: 2rem 0 1rem;
@@ -391,7 +397,7 @@ ul {
         height: 90px;
     }
     h4 {
-        font-family: 'Bebas Neue', sans-serif;
+        font-family: "Bebas Neue", sans-serif;
         font-size: 30px;
         line-height: 36px;
     }
@@ -411,15 +417,23 @@ ul {
 /* Popular Item Section */
 .popular-item {
     background: rgba(251, 247, 242, 1);
-    padding-top: 1rem; 
+    padding-top: 1rem;
     padding-bottom: 1rem;
     position: relative;
 }
 
 .popular-item-container {
     max-width: 1320px;
-    margin: 10rem auto;
+    margin: 8rem auto;
     padding: 1rem;
+    position: relative;
+}
+
+.popular-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
 }
 
 .popular-item-subheading {
@@ -430,28 +444,65 @@ ul {
 }
 
 .popular-item-subheading i {
-        margin-right: 10px;
+    margin-right: 10px;
 }
 
 .popular-item-heading {
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: "Bebas Neue", sans-serif;
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 4rem;
 }
 
+.popular-foods-navigation {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+}
+
+.popular-foods-navigation button {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+
+.popular-foods-prev {
+    color: var(--link-font-color);
+}
+
+.popular-foods-next {
+    color: var(--primary-color);
+}
+
+.popular-foods-navigation button:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+    transform: translateY(-3px);
+}
 
 .popular-item-cards {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    margin: 2rem auto;
+    margin: 0 auto 2rem;
 }
 
 .popular-item-card {
     width: 306px;
-    padding: 1rem; 
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -472,7 +523,7 @@ ul {
 }
 
 .popular-item-name {
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: "Bebas Neue", sans-serif;
     font-size: 24px;
     text-align: center;
     line-height: 36px;
@@ -493,16 +544,12 @@ ul {
     transform: translateY(-50%);
 }
 
-
-
-
 /* Media Queries */
 @media (max-width: 1800px) {
     .side-img {
         display: none;
     }
 }
-
 
 @media (max-width: 992px) {
     .navbar-container {
@@ -554,10 +601,73 @@ ul {
         gap: 2rem;
         align-items: center;
     }
+
+    /* Popular Item section */
+    .popular-item {
+        padding: 40px 0;
+    }
+    .popular-item-container {
+        padding: 0 20px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .popular-item-header {
+        margin-bottom: 30px;
+    }
+    .popular-item-heading {
+        font-size: 32px;
+        margin-bottom: 0;
+    }
+    .popular-item-subheading {
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+
+    .popular-item-cards {
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .popular-item-card {
+        width: 100%;
+        max-width: 400px;
+        display: none;
+    }
+
+    .popular-foods-navigation {
+        position: static;
+
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        gap: 20px;
+
+        margin-top: 30px;
+    }
+
+    .popular-foods-navigation button {
+        width: 45px;
+        height: 45px;
+
+        font-size: 16px;
+    }
+    .popular-item-card.active {
+        display: flex;
+    }
 }
 
 @media (max-width: 768px) {
-    .hero-heading h1{
+    .hero-heading h1 {
         font-size: 40px;
     }
 

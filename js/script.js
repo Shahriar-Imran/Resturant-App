@@ -6,3 +6,43 @@ document.addEventListener('DOMContentLoaded', function() {
         mobileMenu.classList.toggle('active');
     })
 })
+
+
+const foodCards = document.querySelectorAll(".popular-item-card");
+
+const previousButton = document.querySelector(".popular-foods-prev");
+const nextButton = document.querySelector(".popular-foods-next");
+
+let currentFoodIndex = 0;
+
+// Display the selected food card
+function showFoodCard(index) {
+    foodCards.forEach((card, i) => {
+        card.classList.toggle("active", i === index);
+    });
+}
+
+// Previous button
+previousButton.addEventListener("click", () => {
+    currentFoodIndex--;
+
+    if (currentFoodIndex < 0) {
+        currentFoodIndex = foodCards.length - 1;
+    }
+
+    showFoodCard(currentFoodIndex);
+});
+
+// Next button
+nextButton.addEventListener("click", () => {
+    currentFoodIndex++;
+
+    if (currentFoodIndex >= foodCards.length) {
+        currentFoodIndex = 0;
+    }
+
+    showFoodCard(currentFoodIndex);
+});
+
+// Initial card
+showFoodCard(currentFoodIndex);
