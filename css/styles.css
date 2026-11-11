@@ -38,14 +38,14 @@ ul {
 
 .navbar {
     padding: 0;
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
 }
 .navbar-area {
-    width: 100%;
+    max-width: 100%;
     background:
         url(../Images/hero-frame.svg) center center / auto repeat,
         linear-gradient(
@@ -156,7 +156,7 @@ ul {
 }
 
 .navbar-mobile-menu-items {
-    position: fixed;
+    position: absolute;
     top: 108px;
     left: 0;
     width: 100%;
@@ -192,27 +192,30 @@ ul {
 /* Hero Section */
 
 .hero-container {
-    max-width: 1373px;
+    max-width: 1320px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 30px;
     margin: 0 auto;
+    padding-top: 108px;
     padding: 130px 0px 130px;
+    position: relative;
 }
 
 .hero-texts {
     /* width: 60%; */
+    position: absolute;
     display: flex;
     flex-direction: column;
     position: relative;
     z-index: 2;
+    top: -70px;
 }
 
 .hero-heading {
     width: 830px;
     position: absolute;
-    top: -70px;
     left: 0;
     z-index: 2;
 }
@@ -931,7 +934,7 @@ ul {
 
 @media (max-width: 992px) {
     .navbar-container {
-        margin: 0 2rem;
+        margin: 0;
         justify-content: space-around;
         gap: 100px;
     }
@@ -951,7 +954,7 @@ ul {
     }
 
     .hero-texts {
-        width: 100%;
+        max-width: 100%;
     }
 
     .hero-content {
