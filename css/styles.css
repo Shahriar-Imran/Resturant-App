@@ -53,11 +53,11 @@ ul {
 
 
 .navbar-container {
-    max-width: 1320px;
     margin: 0 auto;
+    padding: 0 2rem;
     height: 108px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -190,7 +190,7 @@ ul {
     gap: 30px;
     margin: 0 auto;
     margin-top: 3rem;
-    padding: 130px 0px 130px;
+    padding: 130px 2rem 130px;
 }
 
 .hero-texts {
@@ -198,6 +198,7 @@ ul {
     display: flex;
     flex-direction: column;
     position: relative;
+    text-align: start;
     z-index: 2;
 }
 
@@ -214,7 +215,7 @@ ul {
     font-family: "Bebas Neue", sans-serif;
     color: #fff;
     font-size: 80px;
-    padding-left: 24px;
+    /* padding-left: 24px; */
     background: linear-gradient(
         to right,
         rgba(189, 31, 23, 0),
@@ -231,12 +232,13 @@ ul {
     font-weight: 400;
     font-size: 24px;
     color: #fff;
-    padding: 10px 24px;
+    padding: 10px 0;
     /* margin-bottom: 2rem; */
 }
 
 .hero-link {
     margin: 24px;
+    margin-left: 0px;
 }
 
 .hero-images {
@@ -257,8 +259,8 @@ ul {
     height: 45px;
     width: 45px;
     position: absolute;
-    top: -25px;
-    right: 25px;
+    top: -4%;
+    right: 4%;
     z-index: 3;
 }
 
@@ -266,8 +268,8 @@ ul {
     height: 120px;
     width: 120px;
     position: absolute;
-    bottom: 0;
-    right: 25px;
+    bottom: 0%;
+    right: 5%;
     padding: 8px;
     border-radius: 50%;
     background-color: var(--link-color);
@@ -282,7 +284,7 @@ ul {
 
 .about-container {
     max-width: 1320px;
-    margin: 8rem auto;
+    padding: 120px 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -301,22 +303,21 @@ ul {
 .about-left {
     position: relative;
     width: 100%;
-    padding: 10px;
 }
 
 .about .market-experience {
     position: absolute;
-    height: 100px;
-    max-width: 200px;
-    top: 30.25px;
-    left: 24px;
+    height: 20%;
+    width: 30%;
+    top: 8%;
+    left: 5%;
+    padding: 5px;
     background: #fff;
     border-radius: 24px;
 }
 
 .about-right {
     width: 100%;
-    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -386,6 +387,7 @@ ul {
 }
 
 .about-features {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -429,8 +431,7 @@ ul {
 
 .popular-item-container {
     max-width: 1320px;
-    margin: 8rem auto;
-    padding: 1rem;
+    padding: 120px 2rem;
     position: relative;
 }
 
@@ -464,8 +465,10 @@ ul {
     gap: 24px;
 
     position: absolute;
-    top: 2rem;
+    top: 120px;
     right: 1rem;
+    transform: translateY(50%);
+    margin-bottom: 1rem;
 }
 
 .prev-next-btn button {
@@ -552,13 +555,13 @@ ul {
 /* Booking Section */
 .booking-section {
     width: 100%;
-    background: url("../Images/booking-section.jpg") center center / cover
+    background: url("../Images/booking-section.jpg") center top / cover
         no-repeat;
-    padding: 8rem 0;
+    /* padding: 8rem 0; */
 }
 
 .booking-form-container {
-    padding: 0 2rem;
+    padding: 120px 2rem;
     width: 50%;
 }
 
@@ -656,11 +659,10 @@ ul {
 }
 
 .user-review-container {
-    margin-top: 10rem;
     display: flex;
     flex-direction: column;
-    gap: 4rem;
-    padding: 2rem;
+    gap: 60px;
+    padding: 120px 2rem;
     position: relative;
 }
 
@@ -774,7 +776,7 @@ ul {
 
 .user-review-right {
     width: 100%;
-    padding: 6rem;
+    /* padding: 6rem; */
     position: relative;
 }
 
@@ -785,8 +787,8 @@ ul {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translateX(-50%);
-    transform: translateY(-50%);
+    transform: translate(-50%, -50%);
+    /* transform: translateY(-50%); */
     border-radius: 50%;
 }
 
@@ -841,9 +843,8 @@ ul {
     justify-content: space-around;
     color: #fff;
     z-index: 10;
-    padding: 8rem 0;
+    padding: 120px 32px;
     gap: 1rem;
-    margin-top: 10rem;
 }
 
 .footer-heading {
@@ -851,6 +852,7 @@ ul {
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 2rem;
+    text-align: center;
 }
 
 .footer-cards {
@@ -924,9 +926,7 @@ ul {
 
 @media (max-width: 992px) {
     .navbar-container {
-        /* margin: 0; */
-        justify-content: space-around;
-        gap: 100px;
+        justify-content: space-between;
     }
     .navbar-menu {
         display: none;
@@ -940,7 +940,7 @@ ul {
 
     .hero-container {
         flex-direction: column;
-        align-items: center;
+        align-items: start;
         margin-top: 108px;
     }
 
@@ -966,7 +966,6 @@ ul {
 
     .hero-images {
         width: 100%;
-        padding: 0 25px;
     }
 
     .hero-images .main-img {
@@ -976,38 +975,35 @@ ul {
     .hero-images .flower-icon {
         height: 40px;
         width: 40px;
-        position: absolute;
-        top: -25px;
-        right: 50px;
-        z-index: 3;
+        /* top: -25px;
+        right: 50px; */
     }
 
     .hero-images .offer-icon {
         height: 100px;
         width: 100px;
-        position: absolute;
+        /* position: absolute;
         bottom: 0;
         right: 50px;
         padding: 8px;
         border-radius: 50%;
         background-color: var(--link-color);
-        z-index: 3;
+        z-index: 3; */
     }
 
     .about-main-contents {
         flex-direction: column;
-        margin: 0 2rem;
+        /* margin: 0 2rem; */
     }
     .about-right {
         max-width: 100%;
     }
     .about-features {
         flex-direction: column;
+        align-items: start;
         gap: 2rem;
         
     }
-
-    
 
     /* Popular Item section */
     .popular-item {
@@ -1059,7 +1055,7 @@ ul {
 
         gap: 20px;
 
-        margin-top: 30px;
+        /* margin-top: 30px; */
     }
 
     .prev-next-btn button {
@@ -1090,6 +1086,10 @@ ul {
         min-height: 550px;
     }
 
+    .user-review .prev-next-btn {
+        margin-top: -3rem;
+    }
+
     .footer-cards {
         flex-direction: column;
     }
@@ -1113,21 +1113,17 @@ ul {
         height: 30px;
         width: 30px;
         position: absolute;
-        top: -20px;
-        right: 60px;
+        top: -5%;
+        right: 7%;
         z-index: 3;
     }
 
     .hero-images .offer-icon {
-        height: 50px;
-        width: 50px;
-        position: absolute;
-        bottom: 5px;
-        right: 65px;
+        height: 72px;
+        width: 72px;
+        bottom: 0;
+        right: 8%;
         padding: 8px;
-        border-radius: 50%;
-        background-color: var(--link-color);
-        z-index: 3;
     }
 
     .link-btn {
