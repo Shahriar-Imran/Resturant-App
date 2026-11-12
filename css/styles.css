@@ -1071,7 +1071,7 @@ ul {
 
     .booking-form-container {
         width: 100%;
-        padding: 1rem 2rem;
+        /* padding: 1rem 2rem; */
     }
 
     .booking-form form {
@@ -1131,10 +1131,10 @@ ul {
         font-size: 15px;
     }
 
-    .booking-form-container {
-        max-width: 100%;
+    /* .booking-form-container {
+        width: 100%;
         padding: 1rem 2rem;
-    }
+    } */
 
     .booking-form form {
         display: flex;
